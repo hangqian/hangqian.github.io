@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="钱行 (Hang Qian) 的学术论文与研究成果">
+    <title>学术论文 | Hang Qian</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .paper-item {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .paper-item:last-child {
+            border-bottom: none;
+        }
+        .paper-title {
+            font-size: 1.15rem;
+            margin-top: 0;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+        .paper-title-link {
+            color: #2c6c94;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .paper-title-link:hover {
+            color: #2980b9;
+        }
+        .paper-meta {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+        .paper-summary {
+            background-color: #f9fbfd;
+            padding: 15px 20px;
+            border-left: 4px solid #7CB342;
+            border-radius: 4px;
+            color: #4a5568;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .paper-summary strong {
+            color: #2c3e50;
+        }
+        
+        /* 下载按钮区域样式 */
+        .action-links {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .wp-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 12px;
+            background-color: #f8f9fa;
+            color: #e74c3c;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+        .wp-download:hover {
+            background-color: #fceceb;
+            border-color: #e74c3c;
+            color: #c0392b;
+        }
+        .wp-download svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+        .code-link {
+            font-size: 0.9rem;
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .code-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+	
+	<header class="sky-header">
+        <div class="container header-content">
+            <div class="title-area">
+                <h1>钱 行 (Hang Qian)</h1>
+                <p style="font-size: 1.1rem; color: #2c6c94; margin-bottom: 5px;">首席工程师, MATLAB 计量经济学工具箱</p>                
+            </div>
+            <nav class="pill-nav">
+                <a href="indexCHN.html" class="nav-btn active">首 页</a>
+                <a href="book.html" class="nav-btn">专 著</a>
+                <a href="researchCHN.html" class="nav-btn">论 文</a>
+                <a href="video.html" class="nav-btn">视频课程</a>
+				<a href="index.html" class="nav-btn" style="background: transparent; border: 1px solid #2c6c94; color: #2c6c94; margin-left: 1px;">🌐 English</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="content-block">
+            <h2 class="section-title">学术论文</h2>
+            <p style="color: #555; margin-bottom: 30px; font-size: 0.95rem;">
+                以下是我在计量经济学、贝叶斯统计和大数据算法领域的主要研究成果。为了方便快速浏览，每篇论文附上了通俗易懂的中文总结，并提供了原文的下载链接。
+            </p>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1515/jem-2024-0020" target="_blank" class="paper-title-link">Maximum Likelihood Estimation of Regression Effects in State Space Models</a>
+                </h3>
+                <p class="paper-meta"><em>Journal of Econometric Methods</em>, 2025. (Hang Qian)</p>
+                <div class="paper-summary">
+                    <strong>通俗总结：</strong> 状态空间模型中通常很难同时估算回归系数和隐藏状态。本文提出了一种新方法，巧妙结合了经典的卡尔曼滤波和最大似然估计，能在不增加计算复杂度的前提下，得到精确的参数估算结果。
+                </div>
+                <div class="action-links">
+                    <a href="MyPaper/MLE.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        下载完整论文 (PDF)
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1111/obes.12641" target="_blank" class="paper-title-link">Bayesian Estimation of Fixed Effects Models with Large Datasets</a>
+                </h3>
+                <p class="paper-meta"><em>Oxford Bulletin of Economics and Statistics</em>, 2024. (Hang Qian)</p>
+                <div class="paper-summary">
+                    <strong>通俗总结：</strong> 在处理海量数据的固定效应模型时，传统的“引入虚拟变量”法容易导致电脑内存溢出。本文提出了一种基于贝叶斯抽样的新算法，能够绕开虚拟变量直接进行估算，彻底解决了复杂模型的内存负担问题。
+                </div>
+                <div class="action-links">
+                    <a href="MyPaper/Panel.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        下载完整论文 (PDF)
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1214/23-bjps589" target="_blank" class="paper-title-link">Divide-and-conquer Metropolis–Hastings samplers with matched samples</a>
+                </h3>
+                <p class="paper-meta"><em>Brazilian Journal of Probability and Statistics</em>, 2023. (Hang Qian)</p>
+                <div class="paper-summary">
+                    <strong>通俗总结：</strong> 面对庞大的数据集，传统的贝叶斯分析往往计算极其缓慢。本文设计了一种“分而治之”的算法，先将大数据拆分成小块分别计算，再通过一种巧妙的“样本匹配”技术将结果无损合并，从而大幅提升了计算效率。
+                </div>
+                <div class="action-links">
+                    <a href="MyPaper/Subposterior.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        下载完整论文 (PDF)
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1080/07350015.2021.1933502" target="_blank" class="paper-title-link">Bayesian Inference in Common Microeconometric Models With Massive Datasets by Double Marginalized Subsampling</a>
+                </h3>
+                <p class="paper-meta"><em>Journal of Business & Economic Statistics</em>, 2022. (Hang Qian)</p>
+                <div class="paper-summary">
+                    <strong>通俗总结：</strong> 为了加速海量微观经济数据的分析，本文开发了一种“双重边缘化子抽样”技术。这种方法让计算机在每次迭代时只需评估极少的数据点，就能精准还原整体数据的特征，极大地提升了处理大规模数据的速度。
+                </div>
+                <div class="action-links">
+                    <a href="MyPaper/Subsampling.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        下载完整论文 (PDF)
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1016/j.ecosta.2018.02.001" target="_blank" class="paper-title-link">Estimating MIDAS regressions via OLS with polynomial parameter profiling</a>
+                </h3>
+                <p class="paper-meta"><em>Econometrics and Statistics</em>, 2019. (Eric Ghysels; Hang Qian)</p>
+                <div class="paper-summary">
+                    <strong>通俗总结：</strong> 在处理不同频率（如月度和季度）的混合数据回归时，传统方法往往需要复杂的非线性计算。本文提出了一种结合普通最小二乘法（OLS）和多项式参数分析的新框架，让这类混合频率数据的分析变得更加简单和稳定。
+                </div>
+                <div class="action-links">
+                    <a href="#" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        获取论文原文
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1214/17-ba1083" target="_blank" class="paper-title-link">Big Data Bayesian Linear Regression and Variable Selection by Normal-Inverse-Gamma Summation</a>
+                </h3>
+                <p class="paper-meta"><em>Bayesian Analysis</em>, 2018. (Hang Qian)</p>
+                <div class="paper-summary">
+                    <strong>通俗总结：</strong> 本文将复杂的贝叶斯大数据分析转化为了简单的“加法”运算。通过引入一种新的求和算子，算法可以将不同数据源的计算结果直接拼合，为超大规模数据的变量筛选和线性回归提供了一种极其高效的解决方案。
+                </div>
+                <div class="action-links">
+                    <a href="https://projecteuclid.org/journalArticle/Download?urlId=10.1214%2F17-BA1083" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        下载完整论文 (PDF)
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1080/07350015.2017.1340300" target="_blank" class="paper-title-link">Inequality Constrained State Space Models</a>
+                </h3>
+                <p class="paper-meta"><em>Journal of Business & Economic Statistics</em>, 2017. (Hang Qian)</p>
+                <div class="paper-summary">
+                    <strong>通俗总结：</strong> 经典的卡尔曼滤波在面对带有“不等式约束”（比如变量取值必须大于零）的数据时往往会失效。本文引入了一种优化的粒子滤波算法，能够在这种复杂的约束条件下依然准确地追踪和估算隐藏的数据状态。
+                </div>
+                <div class="action-links">
+                    <a href="MyPaper/ICSSM.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        下载完整论文 (PDF)
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1080/09638199.2017.1303079" target="_blank" class="paper-title-link">The effects of exports on facility environmental performance: Evidence from a matching approach</a>
+                </h3>
+                <p class="paper-meta"><em>The Journal of International Trade & Economic Development</em>, 2017. (Jingbo Cui; Hang Qian)</p>
+                <div class="paper-summary">
+                    <strong>通俗总结：</strong> 出口企业是否一定比非出口企业更环保？本文利用美国制造业的数据研究发现，这种“出口带来的环保效应”并非绝对，而是高度依赖于企业所在行业的具体特征（如治污成本和资本密集度）。
+                </div>
+                <div class="action-links">
+                    <a href="#" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        获取论文原文
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1016/j.jeconom.2016.04.016" target="_blank" class="paper-title-link">A computationally efficient method for vector autoregression with mixed frequency data</a>
+                </h3>
+                <p class="paper-meta"><em>Journal of Econometrics</em>, 2016. (Hang Qian)</p>
+                <div class="paper-summary">
+                    <strong>通俗总结：</strong> 宏观经济数据往往存在频率不一的问题（如月度数据与季度数据混杂）。本文提出了一种计算高效的贝叶斯向量自回归（VAR）方法，能够在保留经济学直觉的同时，直接融合并处理这些不同频率的数据。
+                </div>
+                <div class="action-links">
+                    <a href="MyPaper/VAR.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        下载完整论文 (PDF)
+                    </a>
+                    <a href="#" class="code-link">[ 相关代码 ]</a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1016/j.chieco.2014.02.004" target="_blank" class="paper-title-link">Income distribution in urban China: An overlooked data inconsistency issue</a>
+                </h3>
+                <p class="paper-meta"><em>China Economic Review</em>, 2014. (Hailong Jin; Hang Qian; Tong Wang; E. Kwan Choi)</p>
+                <div class="paper-summary">
+                    <strong>通俗总结：</strong> 本文指出，2002年中国城镇住户调查样本的扩大（纳入了流动人口）导致了前后数据的结构性断层。研究利用动态模型还原了一个连贯的时间序列，为准确衡量中国城市收入分配（如计算基尼系数）提供了更可靠的数据基础。
+                </div>
+                <div class="action-links">
+                    <a href="#" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        获取论文原文
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1111/jtsa.12051" target="_blank" class="paper-title-link">A FLEXIBLE STATE SPACE MODEL AND ITS APPLICATIONS</a>
+                </h3>
+                <p class="paper-meta"><em>Journal of Time Series Analysis</em>, 2013. (Hang Qian)</p>
+                <div class="paper-summary">
+                    <strong>通俗总结：</strong> 传统的模型通常将观测到的数据和未知的隐藏状态区别对待。本文提出了一种全新的“灵活状态空间模型”，将两者对称处理，使得在分析动态因子或波动率等问题时，模型结构变得更加直观和精简。
+                </div>
+                <div class="action-links">
+                    <a href="MyPaper/FSSM.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        下载完整论文 (PDF)
+                    </a>                    
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer style="text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.9rem; margin-top: 40px; border-top: 1px solid #eaeaea;">
+        <p>&copy; 2011-2026 钱行 (Hang Qian). All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

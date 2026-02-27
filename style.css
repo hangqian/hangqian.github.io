@@ -1,0 +1,208 @@
+/* Modern Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/* Typography */
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Layout Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #fff;
+    padding: 40px 0 20px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+/* 基础重置 */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 天蓝色渐变背景头部 */
+.sky-header {
+    background: linear-gradient(to bottom, #aedbf0 0%, #ffffff 100%);
+    padding: 40px 0 20px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.title-area h1 {
+    color: #2c6c94;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+.motto {
+    color: #5da3c7;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* 胶囊导航按钮 (致敬旧版的橘色与绿色块) */
+.pill-nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #7CB342; /* 经典绿 */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px; /* 变圆润 */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #689f38;
+    transform: translateY(-2px);
+}
+
+.nav-btn.active {
+    background-color: #FF8A65; /* 经典橘色 */
+}
+
+.nav-btn.active:hover {
+    background-color: #e67552;
+}
+
+/* 主体内容排版 */
+.content-block {
+    margin-bottom: 50px;
+}
+.section-title {
+    color: #FF6820; /* 沿用您旧版的橙色标题 */
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+p { margin-bottom: 15px; }
+
+/* 突出显示框 (用于书籍) */
+.highlight-box {
+    background-color: #f9fbfd;
+    border-left: 4px solid #7CB342;
+    padding: 20px;
+    border-radius: 4px;
+}
+.highlight-box h3 { margin-bottom: 5px; color: #333; }
+.clean-list {
+    list-style: none;
+    margin: 15px 0;
+}
+.clean-list li { margin-bottom: 5px; }
+
+.text-link {
+    color: #2c6c94;
+    text-decoration: none;
+    font-weight: bold;
+}
+.text-link:hover { text-decoration: underline; }
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+
+/* --- 新增：左右分栏布局 --- */
+.layout-wrapper {
+    display: flex;
+    gap: 40px; /* 图片和文字之间的间距 */
+    align-items: flex-start;
+}
+
+.sidebar {
+    flex: 0 0 300px;
+    position: sticky;
+    top: 40px; /* 这是滚动时图片距离浏览器顶部的吸附距离，保持不变 */
+    align-self: flex-start;
+    
+    /* --- 新增下面这行来微调初始位置 --- */
+    margin-top: 20px; /* 往下推 25 像素。您可以根据浏览器的实际显示效果，把这个数值在 15px 到 30px 之间微调，直到严丝合缝对齐为止 */
+}
+
+.sidebar-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* 给图片加一点点圆角，显得更现代 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* 加一点淡淡的阴影 */
+}
+
+.main-content {
+    flex: 1; /* 右侧文字自动填满剩余空间 */
+}
+
+.paper-list li {
+    margin-bottom: 12px;
+    padding-left: 15px;
+    border-left: 3px solid #7CB342; /* 给论文列表加一个绿色的引导线，呼应导航栏 */
+}
+
+/* 手机端响应式适配：屏幕变窄时，图片自动跑到文字上方 */
+@media (max-width: 768px) {
+    .layout-wrapper {
+        flex-direction: column;
+    }
+    .sidebar {
+        flex: auto;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 30px auto;
+    }
+}

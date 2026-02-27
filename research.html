@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research papers, codes, and publications by Hang Qian.">
+    <title>Research | Hang Qian</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 专门为研究页面新增的样式 */
+        .paper-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .paper-item:last-child {
+            border-bottom: none;
+        }
+        .paper-title {
+            font-size: 1.15rem;
+            margin-bottom: 5px;
+        }
+        .paper-title-link {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .paper-title-link:hover {
+            color: #2980b9;
+        }
+        .paper-meta {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        /* 新增：通俗总结（Elevator Pitch）的样式 */
+        .paper-summary {
+            font-size: 0.9rem;
+            color: #4a5568;
+            margin-bottom: 12px;
+            line-height: 1.5;
+            padding-left: 12px;
+            border-left: 3px solid #e2e8f0;
+        }
+        
+        .action-links {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .wp-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 12px;
+            background-color: #f8f9fa;
+            color: #e74c3c;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+        .wp-download:hover {
+            background-color: #fceceb;
+            border-color: #e74c3c;
+            color: #c0392b;
+        }
+        .wp-download svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+        .code-link {
+            font-size: 0.9rem;
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .code-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="sky-header">
+        <div class="container header-content">
+            <div class="title-area">
+                <h1>Hang Qian</h1>
+                <p class="motto">Principal Engineer, MATLAB Econometrics Toolbox</p>
+            </div>
+            <nav class="pill-nav">
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="book.html" class="nav-btn">Book</a>
+                <a href="research.html" class="nav-btn active">Paper</a>
+                <a href="video.html" target="_blank" class="nav-btn">Course Video</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="content-block">
+            <h2 class="section-title">Current Working Papers</h2>
+            
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <span class="paper-title-link">A New Sampling Method via Approximate Bayesian Computation with Correlated Random Numbers</span>
+                </h3>
+                <p class="paper-meta">Prepared for submission, 2026. (Hang Qian)</p>
+                <div class="action-links">
+                    <a href="#" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        Download Working Paper
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-block">
+            <h2 class="section-title">Publications</h2>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1515/jem-2024-0020" target="_blank" class="paper-title-link">Maximum Likelihood Estimation of Regression Effects in State Space Models</a>
+                </h3>
+                <p class="paper-meta"><em>Journal of Econometric Methods</em>, 2025. (Hang Qian)</p>
+                <p class="paper-summary"><strong>In short:</strong> It is typically difficult to simultaneously estimate regression coefficients and hidden states in state space models. This paper proposes a novel method that cleverly combines the classic Kalman filter with maximum likelihood estimation, yielding accurate parameter estimates without increasing computational complexity.</p>
+                <div class="action-links">
+                    <a href="MyPaper/MLE.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        Download Working Paper
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1111/obes.12641" target="_blank" class="paper-title-link">Bayesian Estimation of Fixed Effects Models with Large Datasets</a>
+                </h3>
+                <p class="paper-meta"><em>Oxford Bulletin of Economics and Statistics</em>, 2024. (Hang Qian)</p>
+                <p class="paper-summary"><strong>In short:</strong> When dealing with fixed effects models for massive datasets, the traditional "dummy variable" approach easily leads to out-of-memory errors. This paper proposes a new algorithm based on Bayesian sampling that estimates parameters directly without creating dummy variables, completely resolving the memory burden.</p>
+                <div class="action-links">
+                    <a href="MyPaper/Panel.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        Download Working Paper
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1214/23-bjps589" target="_blank" class="paper-title-link">Divide-and-conquer Metropolis–Hastings samplers with matched samples</a>
+                </h3>
+                <p class="paper-meta"><em>Brazilian Journal of Probability and Statistics</em>, 2023. (Hang Qian)</p>
+                <p class="paper-summary"><strong>In short:</strong> Traditional Bayesian analysis can be extremely slow when facing massive datasets. This paper designs a "divide-and-conquer" algorithm that splits large data into smaller chunks for separate computation, and then seamlessly merges the results using a clever "matched sample" technique to significantly boost efficiency.</p>
+                <div class="action-links">
+                    <a href="MyPaper/Subposterior.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        Download Working Paper
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1080/07350015.2021.1933502" target="_blank" class="paper-title-link">Bayesian Inference in Common Microeconometric Models With Massive Datasets by Double Marginalized Subsampling</a>
+                </h3>
+                <p class="paper-meta"><em>Journal of Business & Economic Statistics</em>, 2022. (Hang Qian)</p>
+                <p class="paper-summary"><strong>In short:</strong> To accelerate the analysis of massive microeconomic datasets, this paper develops a "double marginalized subsampling" technique. It allows the computer to evaluate only a tiny fraction of data points in each iteration while accurately reconstructing overall data characteristics, vastly improving processing speed.</p>
+                <div class="action-links">
+                    <a href="MyPaper/Subsampling.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        Download Working Paper
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1016/j.ecosta.2018.02.001" target="_blank" class="paper-title-link">Estimating MIDAS regressions via OLS with polynomial parameter profiling</a>
+                </h3>
+                <p class="paper-meta"><em>Econometrics and Statistics</em>, 2019. (Eric Ghysels; Hang Qian)</p>
+                <p class="paper-summary"><strong>In short:</strong> Traditional methods often require complex nonlinear calculations when handling mixed-frequency data regressions. This paper proposes a new framework combining Ordinary Least Squares (OLS) with polynomial parameter profiling, making the analysis of such data simpler and more stable.</p>
+                <div class="action-links">
+                    <a href="#" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        Download Working Paper
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1214/17-ba1083" target="_blank" class="paper-title-link">Big Data Bayesian Linear Regression and Variable Selection by Normal-Inverse-Gamma Summation</a>
+                </h3>
+                <p class="paper-meta"><em>Bayesian Analysis</em>, 2018. (Hang Qian)</p>
+                <p class="paper-summary"><strong>In short:</strong> This paper transforms complex Bayesian big data analysis into simple "addition" operations. By introducing a novel summation operator, the algorithm directly pieces together computation results from different data sources, offering a highly efficient solution for variable selection.</p>
+                <div class="action-links">
+                    <a href="https://projecteuclid.org/journalArticle/Download?urlId=10.1214%2F17-BA1083" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        Download Working Paper
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1080/07350015.2017.1340300" target="_blank" class="paper-title-link">Inequality Constrained State Space Models</a>
+                </h3>
+                <p class="paper-meta"><em>Journal of Business & Economic Statistics</em>, 2017. (Hang Qian)</p>
+                <p class="paper-summary"><strong>In short:</strong> The classic Kalman filter often fails when dealing with data containing "inequality constraints" (e.g., variables must be strictly positive). This paper introduces an optimized particle filter algorithm that accurately tracks hidden data states even under these complex constraints.</p>
+                <div class="action-links">
+                    <a href="MyPaper/ICSSM.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        Download Working Paper
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1080/09638199.2017.1303079" target="_blank" class="paper-title-link">The effects of exports on facility environmental performance: Evidence from a matching approach</a>
+                </h3>
+                <p class="paper-meta"><em>The Journal of International Trade & Economic Development</em>, 2017. (Jingbo Cui; Hang Qian)</p>
+                <p class="paper-summary"><strong>In short:</strong> Are exporting firms necessarily more environmentally friendly than non-exporters? Using U.S. manufacturing data, this paper finds that this "export-induced environmental effect" is highly dependent on the specific characteristics of the firm's industry, such as pollution abatement costs.</p>
+                <div class="action-links">
+                    <a href="#" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        Download Working Paper
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1016/j.jeconom.2016.04.016" target="_blank" class="paper-title-link">A computationally efficient method for vector autoregression with mixed frequency data</a>
+                </h3>
+                <p class="paper-meta"><em>Journal of Econometrics</em>, 2016. (Hang Qian)</p>
+                <p class="paper-summary"><strong>In short:</strong> Macroeconomic data often suffers from mixed frequencies (e.g., a mix of monthly and quarterly data). This paper proposes a computationally efficient Bayesian Vector Autoregression (VAR) method that can directly integrate and process these data while preserving economic intuition.</p>
+                <div class="action-links">
+                    <a href="MyPaper/VAR.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        Download Working Paper
+                    </a>
+                    <a href="#" class="code-link">[ Code ]</a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1016/j.chieco.2014.02.004" target="_blank" class="paper-title-link">Income distribution in urban China: An overlooked data inconsistency issue</a>
+                </h3>
+                <p class="paper-meta"><em>China Economic Review</em>, 2014. (Hailong Jin; Hang Qian; Tong Wang; E. Kwan Choi)</p>
+                <p class="paper-summary"><strong>In short:</strong> This paper points out that the 2002 expansion of the Chinese Urban Household Survey sample led to a structural break in the data. The study uses a dynamic model to reconstruct a coherent time series, providing a more reliable foundation for measuring urban China's income distribution.</p>
+                <div class="action-links">
+                    <a href="#" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        Download Working Paper
+                    </a>
+                </div>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">
+                    <a href="https://doi.org/10.1111/jtsa.12051" target="_blank" class="paper-title-link">A FLEXIBLE STATE SPACE MODEL AND ITS APPLICATIONS</a>
+                </h3>
+                <p class="paper-meta"><em>Journal of Time Series Analysis</em>, 2013. (Hang Qian)</p>
+                <p class="paper-summary"><strong>In short:</strong> Traditional models typically treat observed data and unknown hidden states differently. This paper proposes a novel "flexible state space model" that treats both symmetrically, making the model structure much more intuitive and parsimonious for analyzing dynamic factors.</p>
+                <div class="action-links">
+                    <a href="MyPaper/FSSM.pdf" class="wp-download" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                        Download Working Paper
+                    </a>                    
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2011-2026 Hang Qian. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
